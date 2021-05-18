@@ -68,3 +68,7 @@ git config --global set user.name <Your name>
     if [ -r ~/.bash_profile ]; then echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile; \
     else echo 'export GPG_TTY=$(tty)' >> ~/.profile; fi
     ```
+
+12. Register GPG key to GitHub
+
+    Detail information is to see [GitHub Docs](https://docs.github.com/ja/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account)
