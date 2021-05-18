@@ -264,7 +264,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 214)
-  jekyll-feed (~> 0.15.1)
   jemoji (~> 0.12.0)
 
 BUNDLED WITH
