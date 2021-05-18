@@ -72,3 +72,9 @@ git config --global set user.name <Your name>
 12. Register GPG key to GitHub
 
     Detail information is to see [GitHub Docs](https://docs.github.com/ja/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account)
+
+13. Set always gpg signing
+
+    ```bash
+    git config --global commit.gpgsign true
+    ```
