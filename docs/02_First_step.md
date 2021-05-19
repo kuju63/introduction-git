@@ -92,21 +92,21 @@ git commit
 
 ```bash
 git log
-commit ed960679889e8dfb15751785fbf0a62b746369fa (HEAD -> master)        
-Author: KuriharaJun <lh182051+src@gmail.com>                            
-Date:   Wed May 19 01:33:38 2021 +0900                                  
-                                                                        
-    Update README.md                                                    
-                                                                        
-    This commit is to update README.md file which add repository name.  
-                                                                        
-commit 9ce7bb5a65917afbd317544e0e872fd531d828d9                         
-Author: KuriharaJun <lh182051+src@gmail.com>                            
-Date:   Wed May 19 01:23:44 2021 +0900                                  
-                                                                        
-    Initial commit                                                      
-                                                                        
-    This commit is just to add empty file of Read me.                   
+commit 1a402692eb95ced3ce531d6e2f18fd3a036ecb78 (HEAD -> master)      
+Author: Kurihara Jun <kurihara.jb@om.asahi-kasei.co.jp>               
+Date:   Wed May 19 08:58:34 2021 +0900                                
+                                                                      
+    Update README.md                                                  
+                                                                      
+    This commit is to update README.md file which add repository name.
+                                                                      
+commit c6ca7bbc2fdafadaf94b2582325b51a576957812                       
+Author: Kurihara Jun <kurihara.jb@om.asahi-kasei.co.jp>               
+Date:   Wed May 19 08:58:00 2021 +0900                                
+                                                                      
+    Initial commit                                                    
+                                                                      
+    This commit is just to add empty file of Read me.                 
 ```
 
 実際に使用していく際には詳細な情報は必要ないため、最小限の情報かつグラフで表示することが多いです。
@@ -114,6 +114,48 @@ Date:   Wed May 19 01:23:44 2021 +0900
 
 ```bash
 git log --oneline --graph --all           
-* ed96067 (HEAD -> master) Update README.md 
-* 9ce7bb5 Initial commit                    
+* 1a40269 (HEAD -> master) Update README.md
+* c6ca7bb Initial commit                   
+```
+
+## Revert changes
+
+```bash
+touch CONTRIBUTING.md
+echo "Changed" >> README.md
+git add .
+git status
+On branch master                                   
+Changes to be committed:                           
+  (use "git restore --staged <file>..." to unstage)
+        new file:   CONTRIBUTING.md                
+        modified:   README.md                      
+```
+
+```bash
+git reset HEAD README.md
+Unstaged changes after reset:
+M       README.md            
+```
+
+```bash
+git status
+On branch master                                                       
+Changes to be committed:                                               
+  (use "git restore --staged <file>..." to unstage)                    
+        new file:   CONTRIBUTING.md                                    
+                                                                       
+Changes not staged for commit:                                         
+  (use "git add <file>..." to update what will be committed)           
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md                                          
+```
+
+``` bash
+git restore README.md
+git status
+On branch master                                   
+Changes to be committed:                           
+  (use "git restore --staged <file>..." to unstage)
+        new file:   CONTRIBUTING.md                
 ```
