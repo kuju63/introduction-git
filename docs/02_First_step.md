@@ -165,3 +165,18 @@ CONTRIBUTING.mdをコミット
 ```bash
 git commit
 ```
+
+### Revert history
+
+```bash
+git log --oneline
+229c494 (HEAD -> master) Add CONTRIBUTING.md
+1a40269 Update README.md                    
+c6ca7bb Initial commit                      
+```
+
+コミットID`229c494`を打ち消す
+
+```bash
+git revert 229c494
+```
