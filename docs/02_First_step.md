@@ -159,3 +159,9 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   CONTRIBUTING.md                
 ```
+
+CONTRIBUTING.mdをコミット
+
+```bash
+git commit
+```
