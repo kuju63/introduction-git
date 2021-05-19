@@ -185,3 +185,5 @@ git log --all --oneline --graph
 * 1a40269 Update README.md                             
 * c6ca7bb Initial commit                               
 ```
+
+[Next to managing branch](03_managing_branch.md)
