@@ -78,3 +78,5 @@ git config --global set user.name <Your name>
     ```bash
     git config --global commit.gpgsign true
     ```
+
+[Next to First step](02_First_step.md)
