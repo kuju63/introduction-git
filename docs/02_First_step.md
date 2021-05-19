@@ -179,4 +179,9 @@ c6ca7bb Initial commit
 
 ```bash
 git revert 229c494
+git log --all --oneline --graph
+* ad868d6 (HEAD -> master) Revert "Add CONTRIBUTING.md"
+* 229c494 Add CONTRIBUTING.md                          
+* 1a40269 Update README.md                             
+* c6ca7bb Initial commit                               
 ```
