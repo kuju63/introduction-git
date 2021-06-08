@@ -11,8 +11,8 @@
 ### Set committer
 
 ``` bash
-git config --global set user.email <Your e-mail address>
-git config --global set user.name <Your name>
+git config --global user.email <Your e-mail address>
+git config --global user.name <Your name>
 ```
 
 ### Generate GPG key
